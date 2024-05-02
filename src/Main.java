@@ -35,6 +35,15 @@ public class Main {
             double notaDeMatrix = teclado.nextDouble();
             mediaEvaluacionUsuario = mediaEvaluacionUsuario + notaDeMatrix;
         }
+
+        int contador = 0;
+        while (contador < 3) {
+            Scanner teclado = new Scanner(System.in);
+            System.out.println("Ingresa la nota que le darias a Matrix: ");
+            double notaDeMatrix = teclado.nextDouble();
+            mediaEvaluacionUsuario += notaDeMatrix;
+            contador++
+        }
         System.out.println("La media de la pelicula Matrix calculada por el usuario es: " + mediaEvaluacionUsuario / 3);
 
 
